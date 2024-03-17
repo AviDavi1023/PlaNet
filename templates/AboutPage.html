@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About | PlaNet</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div class="navbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a class="active" href="AboutPage.html">About</a></li>
+      <li><a href="PlantNet_Project.html">Upload</a></li>
+      <li><a href="HowToUse.html">How to use</a></li>
+      <li><a href="https://github.com/AviDavi1023/PlaNet-Project">GitHub</a></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <img class="logo_image"src="{{ url_for('static', filename='Logo.png') }}" alt="logo">
+    <h1>PlaNet</h1>
+  </div>
+
+  <div>
+    <h2>About PlaNet</h2>
+    <ul class=about_bullet>
+      <li>The purpose of this project is to educate people about local plants by teaching them about which plants are native, which are invasive, how to plant native species they find, etc.</li>
+      <li>If the user sees a plant they are curious about, they could simply scan it and get information on that plant and how it is related to their city.</li>
+      <li>By doing this, San Carlos’s ecosystem will be benefited and positively impacted with more educated planting and understanding of local plants.</li>
+      <li>In the initial private versions of this project, the target audience will be limited to my close family to educate about plants/planting.</li>
+      <li>Later on, as I continue working on this, it will be targeted to the general public who use it, despite their location.</li>
+      <li>This project is relevant to San Carlos because as Spring approaches, it is important for people to know which plants are good to plant, which ones could be harmful to a healthy San Carlos ecosystem, and how to plant good plants so they can grow best.</li>
+      <li>Many people are uneducated on native plants, and some people don’t know how to use Google Lens very well, so this project could also help educate them.</li>
+      <li>As I continue to develop this program, I plan to make it publicly accessible, have access to images via Google Images, release it publicly, and use user location rather than assuming San Carlos location.</li>
+    </ul>
+  </div>
+
+  <a href="Home.html"><button class="return_home_button">Return to Home</button></a>
+  
+</body>
+
+</html>

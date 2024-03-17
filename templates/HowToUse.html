@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Help | PlaNet</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div class="navbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AboutPage.html">About</a></li>
+      <li><a href="PlantNet_Project.html">Upload</a></li>
+      <li><a class="active" href="HowToUse.html">How to use</a></li>
+      <li><a href="https://github.com/AviDavi1023/PlaNet-Project">GitHub</a></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <img class="logo_image"src="{{ url_for('static', filename='Logo.png') }}" alt="logo">
+    <h1>PlaNet</h1>
+  </div>
+
+  <div>
+    <h2>See this video to learn how to use PlaNet!</h2>
+  </div>
+
+  <video width="640" height="360" controls>
+    <source src="{{ url_for('static', filename='Blender.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+</body>
+
+</html>
