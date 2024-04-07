@@ -4,6 +4,7 @@ from flask import Flask, request, render_template
 from pprint import pprint
 import os
 from werkzeug.utils import secure_filename
+import webbrowser
 
 API_KEY = "2b108V22Bnpcm0ozunmOe5hUu"
 PROJECT = "all"
@@ -13,6 +14,8 @@ app = Flask(__name__, static_url_path='/static')
 
 upload_folder = os.path.join('static', 'uploads')
 app.config['UPLOAD'] = upload_folder
+
+webbrowser.open('http://127.0.0.1:8095/PlantNet_Project.html')
 
 @app.route('/Home.html')
 def home():
