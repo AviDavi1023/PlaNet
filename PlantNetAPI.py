@@ -5,10 +5,10 @@ from pprint import pprint
 import os
 from werkzeug.utils import secure_filename
 import webbrowser
+import creds
 
-API_KEY = "2b108V22Bnpcm0ozunmOe5hUu"
 PROJECT = "all"
-api_endpoint = f"https://my-api.plantnet.org/v2/identify/{PROJECT}?api-key={API_KEY}"
+api_endpoint = f"https://my-api.plantnet.org/v2/identify/{PROJECT}?api-key={creds.API_KEY}"
 
 app = Flask(__name__, static_url_path='/static')
 
