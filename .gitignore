@@ -4,6 +4,9 @@ __pycache__/
 *.pyo
 *.Python
 
+#API Key
+creds.py
+
 build/
 develop-eggs/
 dist/
